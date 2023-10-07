@@ -2,7 +2,6 @@ const express = require('express')
 const mongoose = require('mongoose')
 
 const app = express()
-const port = 3000
 
 // Routes
 const cors = require('cors')
@@ -46,6 +45,4 @@ app.use('/api/users', user) // it will be called when someone calles '/api/users
 
 app.use('/api/users-products', user_products)
 
-app.listen(port, () => {
-  console.log("Listening on port 3000")
-})
+module.exports = app;

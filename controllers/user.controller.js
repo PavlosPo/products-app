@@ -36,7 +36,7 @@ exports.findOne = async(req, res) => {
   console.log("Find user with username ", username)
 
   try {
-    const result = await User.findOne({name: username})
+    const result = await User.findOne({username: username})
     
     res.status(200).json({status: true, data: result})
   } catch (err) {

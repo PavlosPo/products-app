@@ -6,7 +6,7 @@ const userController = require('../controllers/user.controller')  // gets the 'u
 router.get('/', userController.findAll)
 router.get('/:username', userController.findOne)
 router.post('/', userController.create)
-router.patch('/', userController.update)
+router.patch('/:username', userController.update)
 router.delete('/:username', userController.delete)
 
 module.exports = router // this exports all the functions created in this file, using 'router' variable
