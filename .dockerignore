@@ -1,0 +1,4 @@
+# Ignore folder 'node_modules' and 'logs'
+
+node_modules
+logs
